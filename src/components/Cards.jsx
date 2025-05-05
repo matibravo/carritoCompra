@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const Cards = ({imagen, titulo, descripcion, precio, handleAgregar, handleQuitar, handleAumentar, handleDisminuir}) => {
+export const Cards = ({imagen, titulo, descripcion, precio, handleAgregar, handleQuitar}) => {
 
     const [agregar, setAgregar] = useState(true)
 

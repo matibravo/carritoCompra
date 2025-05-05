@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export const CarritoPages = () => {
 
-    const {listaCompras, agregarCompra, eliminarCompra, aumentarCantidad, disminuirCantidad} = useContext(CarritoContext)
+    const {listaCompras, eliminarCompra, aumentarCantidad, disminuirCantidad} = useContext(CarritoContext)
 
     const calcularTotal = () => {
         return listaCompras.reduce((total, item) => total + item.price * item.cantidad, 0).toFixed(2)
